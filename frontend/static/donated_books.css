@@ -1,0 +1,83 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Map Section */
+#map-section {
+    margin: 20px 0;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Book List Section */
+#books-list-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+#books-list-section li {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#books-list-section img {
+    width: 50px;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #2c3e50;
+    color: #fff;
+    margin-top: 20px;
+}

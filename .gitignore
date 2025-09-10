@@ -1,0 +1,19 @@
+# Backend virtual environment
+backend/env/
+
+# Python cache
+*.pyc
+__pycache__/
+
+# Database (local only)
+db.sqlite3
+
+# Media & uploads
+backend/readagain_back/media/
+backend/readagain_back/book_covers/
+
+# Frontend node_modules
+frontend/node_modules/
+
+# Environment variables
+*.env

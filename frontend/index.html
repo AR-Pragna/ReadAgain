@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Registeration</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box Loginform active">
+            <h2>Login</h2>
+            <div class="input-box">
+                <input type="email" id="login-email" required>
+                <label>Email</label>
+                <div class="error" id="login-email-error"></div>
+            </div>
+            <div class="input-box">
+                <input type="password" id="login-password" required>
+                <label>Password</label>
+                <div class="error" id="login-password-error"></div>
+            </div>
+            <button class="btn" id="login-btn">Login</button>
+            
+            <div class="creation-account">
+                Don't have an account? <a href="#" class="Registerbtn">Register</a>
+            </div>
+        </div>
+
+        <div class="form-box Registerform">
+            <h2>Register</h2>
+            <div class="input-box">
+                <input type="email" id="register-email" required>
+                <label>Email</label>
+                <div class="error" id="register-email-error"></div>
+            </div>
+            <div class="input-box">
+                <input type="password" id="register-password" required>
+                <label>Password</label>
+                <div class="error" id="register-password-error"></div>
+            </div>
+            <div class="input-box">
+                <input type="password" id="register-confirm-password" required>
+                <label>Confirm Password</label>
+                <div class="error" id="register-confirm-password-error"></div>
+            </div>
+            <button class="btn" id="register-btn">Register</button>
+            <div class="creation-account">
+            
+                Already have an account? <a href="#" class="Loginbtn">Login</a>
+            </div>
+        </div>
+    </div>
+    <script src="static/index.js"></script>
+</body>
+</html>

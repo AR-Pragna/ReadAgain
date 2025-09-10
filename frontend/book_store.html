@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/book_store.css">
+  <title>Buy Page</title>
+</head>
+<body>
+  <div class="header">
+    <h1>Welcome to Read Again!</h1>
+    <p>Find your favorite books and click "Buy Now" to purchase them!</p>
+    <input type="text" id="search-bar" placeholder="Search for books..." oninput="filterBooks()">
+  </div>
+
+  <div class="card-container">
+    <p id="no-books-message" class="hidden">Books not found</p>
+    <!-- Example of multiple cards -->
+    
+
+    <!-- Add more books as needed -->
+  </div>
+
+  <!-- Chat Modal -->
+  <div class="chat-modal hidden" id="chat-modal">
+    <div class="chat-modal-content">
+      <h2>Chat with Seller</h2>
+      <p id="book-title-chat">Book Title:</p>
+      <p id="book-author-chat">Seller:</p>
+      <textarea id="chat-input" placeholder="Write your message here..."></textarea>
+      <button onclick="sendMessage()">Send Message</button>
+      <button onclick="closeChat()">Close</button>
+    </div>
+  </div>
+
+  <script src="static/book_store.js"></script>
+</body>
+</html>

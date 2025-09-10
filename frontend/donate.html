@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Page</title>
+    <link rel="stylesheet" href="static/donate.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>Donate Your Books</h1>
+        <p>Help others by donating your unused books! Select your location on the map.</p>
+        <nav>
+            <a href="donated_books.html"><button>Donated Books</button></a>
+        </nav>
+    </header>
+    <main>
+        <!-- Donation Form -->
+        <form id="donate-form" action="/donate" method="POST" enctype="multipart/form-data">
+            <label for="book-title">Book Title:</label>
+            <input type="text" id="book-title" name="bookTitle" required>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+
+            <label for="condition">Condition:</label>
+            <select id="condition" name="condition">
+                <option value="new">New</option>
+                <option value="like-new">Like New</option>
+                <option value="used">Used</option>
+            </select>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="book-cover">Upload Book Cover:</label>
+            <input type="file" id="book-cover" name="bookCover" accept="image/*" required>
+
+            <label for="location">Selected Location:</label>
+            <input type="text" id="location" name="location" placeholder="Click on the map to select" readonly required>
+
+            <div id="map-container">
+                <div id="map"></div>
+            </div>
+
+            <button type="submit">Donate</button>
+        </form>
+    </main>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="static/donate.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+/* Updated CSS for the homepage */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: hwb(291 46% 23% / 0.865);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+    color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar .logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-bar button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: hwb(291 46% 23% / 0.865);
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.card {
+    background-color: antiquewhite;
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background: hwb(291 46% 23% / 0.865);
+    color: #fff;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+
+.footer-links h4, .footer-contact h4, .footer-social h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.footer-section p, .footer-contact p {
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: lightgray;
+}
+
+.footer-social .social-icons a {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.footer-social .social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.2);
+}

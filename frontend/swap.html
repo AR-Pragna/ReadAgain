@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap Page</title>
+    <link rel="stylesheet" href="static/swap.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Swap Your Books</h1>
+        <p>Connect with people nearby to exchange books and discover new reads!</p>
+    </header>
+    <main>
+        <form id="swap-form" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="location">Selected Location:</label>
+                <input type="text" id="location" placeholder="Click on the map to select" readonly required>
+            </div>
+            <div class="form-group">
+                <label for="swap-book">Book You Want to Swap:</label>
+                <input type="text" id="swap-book" placeholder="Enter the book name" required>
+            </div>
+            <div class="form-group">
+                <label for="book-image">Upload Book Cover:</label>
+                <input type="file" id="book-image" accept="image/*" required>
+            </div>
+            <button type="submit">Find Swap Partners</button>
+        </form>
+        <div id="map-container">
+            <h2>Select Location on the Map</h2>
+            <div id="map"></div>
+        </div>
+    </main>
+    <script src="static/swap.js"></script>
+</body>
+</html>

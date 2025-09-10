@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Donated Books</title>
+    <link rel="stylesheet" href="static/donated_books.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+    <header>
+        <h1>Available Donated Books</h1>
+        <p>Find donated books near your location and start your reading journey!</p>
+        <nav>
+            <a href="donate.html">Donate Books</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search-section">
+            <h2>Search for Donated Books</h2>
+            <form id="location-form">
+                <label for="radius">Search Radius (in km):</label>
+                <input type="number" id="radius" name="radius" min="1" max="100" value="10" required>
+                <button type="button" id="find-books">Search</button>
+            </form>
+        </section>
+
+        <section id="map-section">
+            <h2>Click on the Map to Select Your Location</h2>
+            <div id="map"></div>
+        </section>
+
+        <section id="books-list-section">
+            <h2>Books Near You</h2>
+            <ul id="books-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Read Again! All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="static/donated_books.js"></script>
+</body>
+</html>
